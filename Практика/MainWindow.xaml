@@ -1,0 +1,26 @@
+﻿<Window x:Class="Практика.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Практика"
+        mc:Ignorable="d"
+        Title="Графики одномерного массива и равных значений" Height="900" Width="800" Icon="/Chris~41.ico" ResizeMode="NoResize">
+    <Grid>
+        <Grid Margin="10,10,10,508">
+            <Canvas x:Name="OriginalArrayCanvas" Background="#FFA174CC" Margin="31,41,10,10" />
+            <Label Content="График одномерного массива" HorizontalAlignment="Left" Margin="10,0,0,0" VerticalAlignment="Top" Width="726" Height="37"/>
+            <Label Content="100" HorizontalAlignment="Left" Margin="0,37,0,0" VerticalAlignment="Top" Width="31" Height="27"/>
+            <Label Content="0" HorizontalAlignment="Left" Margin="5,319,0,0" VerticalAlignment="Top" Width="21" Height="37"/>
+        </Grid>
+        <Grid Margin="0,381,10,143">
+            <Canvas x:Name="EqualValuesCanvas" Background="#FF7F5492" Margin="36,38,10,0" />
+            <Label Content="График равного значения" HorizontalAlignment="Left" Margin="10,0,0,0" VerticalAlignment="Top" Height="33" Width="752"/>
+            <Label Content="0" HorizontalAlignment="Left" Margin="10,313,0,0" VerticalAlignment="Top" Width="21" Height="37"/>
+            <Label Content="100" HorizontalAlignment="Left" Margin="5,38,0,0" VerticalAlignment="Top" Width="31" Height="27"/>
+        </Grid>
+        <Grid Margin="134,746,144,38">
+            <Button x:Name="GenerateButton" Content="Сгененрировать массив" Margin="175,10,169,10" Click="GenerateButton_Click" Background="#FFA58EDA" BorderBrush="#FF7B4A9E"/>
+        </Grid>
+    </Grid>
+</Window>
